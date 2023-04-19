@@ -93,6 +93,7 @@ header nav img {
 }
 .barre-test input {
   width: 70%;
+  opacity: 0.45;
 }
 .barre-test button {
   background-color: #0065fc;
