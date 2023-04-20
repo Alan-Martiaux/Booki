@@ -70,13 +70,10 @@ a {
   text-decoration: none;
 }
 
-nav a {
-  color: #0065fc;
-}
-
 header nav img {
   width: 60px;
   height: 20px;
+  margin-top: 15px;
 }
 
 /*** Barre de Recherche ***/
@@ -93,7 +90,9 @@ header nav img {
 }
 .barre-test input {
   width: 70%;
-  opacity: 0.45;
+  opacity: 0.65;
+  color: black;
+  font-weight: bold;
 }
 .barre-test button {
   background-color: #0065fc;
@@ -156,6 +155,8 @@ input {
   padding-left: 10px;
   margin-right: 15px;
   border-radius: 20px;
+  font-weight: bold;
+  color: black;
 }
 
 .entourer {
@@ -395,6 +396,12 @@ footer a {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /** Image 2 ne reduit pas **/
+  .activites-cards img {
+    height: 80%;
+  }
+  /** Image 2 ne reduit pas **/
 
   .populaires-cards .card {
     width: 30%;
