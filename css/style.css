@@ -363,7 +363,10 @@ footer {
   justify-content: flex-start;
   gap: 150px;
 }
-
+footer ul {
+  margin-left: 10px;
+  padding-left: 10px;
+}
 footer li {
   display: flex;
   margin: 10px;
@@ -429,7 +432,7 @@ footer a {
     row-gap: 25px;
   }
   footer {
-    gap: 100px;
+    gap: 7%;
   }
 }
 
