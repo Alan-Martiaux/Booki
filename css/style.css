@@ -63,7 +63,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 a {
@@ -81,6 +81,13 @@ header nav img {
   display: flex;
   flex-direction: row;
   padding-bottom: 15px;
+}
+.barre-recherche h2 {
+  margin-bottom: 5px;
+}
+.barre-recherche p {
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 .barre-test {
@@ -142,6 +149,7 @@ input {
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  padding-top: 15px;
 }
 .booki-filters {
   display: flex;
@@ -402,7 +410,7 @@ footer a {
 
   /** Image 2 ne reduit pas **/
   .activites-cards img {
-    height: 80%;
+    height: 141px;
   }
   /** Image 2 ne reduit pas **/
 
