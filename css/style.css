@@ -20,11 +20,6 @@ body {
   margin: 0px;
 }
 
-.header-container {
-  display: flex;
-  align-items: flex-start;
-}
-
 .main-container {
   width: 100%;
   max-width: 1440px;
@@ -70,10 +65,44 @@ a {
   text-decoration: none;
 }
 
+/**HEADER**/
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
+}
+
 header nav img {
   width: 60px;
   height: 20px;
   margin-top: 15px;
+}
+
+.menu_item {
+  border-top: 3px solid transparent;
+  padding-top: 10px;
+}
+
+.booki-choice {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.menu_item a {
+  color: black;
+}
+
+/**Hover header**/
+.menu_item:hover {
+  border-top: 3px solid var(--main-color);
+}
+
+.menu_item:hover a {
+  color: var(--main-color);
 }
 
 /*** Barre de Recherche ***/
@@ -157,42 +186,7 @@ input {
   color: black;
 }
 
-.entourer {
-  border: 1px solid var(--filter-bg-color);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 20px;
-}
-
-.booki-choice {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-.menu_item a {
-  color: black;
-}
-
-/*********************************/
-
-/****** Hover *****/
-.menu_item {
-  border-top: 3px solid transparent;
-  padding-top: 10px;
-}
-.menu_item:hover {
-  border-top: 3px solid var(--main-color);
-}
-
-.menu_item:hover a {
-  color: var(--main-color);
-}
+/****** Hover filter *****/
 
 .filters a:hover {
   background-color: var(--filter-bg-color);
@@ -401,11 +395,9 @@ footer a {
     justify-content: space-between;
   }
 
-  /** Image 2 ne reduit pas **/
   .activites-cards img {
     height: 141px;
   }
-  /** Image 2 ne reduit pas **/
 
   .populaires-cards .card {
     width: 30%;
@@ -512,7 +504,8 @@ footer a {
     border-radius: 0px;
   }
   .populaires-cards,
-  .hebergements-cards {
+  .hebergements-cards,
+  .activites-cards {
     flex-direction: column;
   }
   .populaires-cards .card,
@@ -524,20 +517,9 @@ footer a {
     order: 2;
   }
 
-  .activites-cards {
-    flex-direction: column;
-  }
-
   /**Footer**/
   footer {
     flex-direction: column;
     gap: 10px;
   }
 }
-/**
-Aide ?
-Placer loupe dans recherche
-
-reduire activités
-
-  **/
