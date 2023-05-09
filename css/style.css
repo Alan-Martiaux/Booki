@@ -67,11 +67,6 @@ a {
 
 /**HEADER**/
 
-.header-container {
-  display: flex;
-  align-items: flex-start;
-}
-
 header nav img {
   width: 60px;
   height: 20px;
@@ -118,7 +113,6 @@ header nav img {
 .barre {
   display: inline-flex;
   flex-direction: row;
-  width: 55%;
 }
 .barre input {
   width: 70%;
@@ -157,10 +151,6 @@ input {
   border: 0.1px solid #f2f2f2;
 }
 
-.barre-button-mobile {
-  display: none;
-}
-
 /***Filtres***/
 .filters {
   display: flex;
@@ -184,6 +174,14 @@ input {
   border-radius: 20px;
   font-weight: bold;
   color: black;
+}
+.entourer {
+  border: 1px solid var(--filter-bg-color);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
 }
 
 /****** Hover filter *****/
